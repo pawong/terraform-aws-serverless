@@ -16,8 +16,7 @@ jobs:
       - name: Run tests and collect coverage
         working-directory: ./src
         run: python -m pytest --cov=app tests
-      - name: Upload test results to Codecov
-        if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
