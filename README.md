@@ -3,7 +3,7 @@
 AWS + Terraform + Amazon API Gateway + AWS Lambda + VPC + VPC Endpoints
 
 ![Tests](https://github.com/pawong/terraform-aws-serverless/workflows/Tests/badge.svg)
-[![codecov](https://codecov.io/gh/pawong/terraform-aws-serverless/branch/master/graph/badge.svg)](https://codecov.io/gh/pawong/terraform-aws-serverless)
+[![codecov](https://codecov.io/gh/pawong/terraform-aws-serverless/graph/badge.svg?token=ITUY52M3AH)](https://codecov.io/gh/pawong/terraform-aws-serverless)
 
 **WARNING**: AWS will probably charge you money!
 
