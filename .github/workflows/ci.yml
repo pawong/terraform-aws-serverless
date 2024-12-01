@@ -11,8 +11,10 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
+        working-directory: ./src
         run: pip install -r requirements-dev.txt
       - name: Run tests and collect coverage
+        working-directory: ./src
         run: python -m pytest --cov=app tests
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
