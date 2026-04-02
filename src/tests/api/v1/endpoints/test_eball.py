@@ -14,7 +14,12 @@ def test_get_answer_only() -> None:
 
 
 def test_get_answer() -> None:
-    r = client.post("api/v1/eball", content='{"question":"Will I die today?"}')
+    r = client.post("api/v1/eball", json={"question":"Will I die today?"})
     assert r.json()["question"] == "Will I die today?"
     assert r.json()["answer"] in answers
     assert r.status_code == status.HTTP_200_OK
+
+
+def test_get_answer_invalid_format() -> None:
+    r = client.post("api/v1/eball", json={"question":""})
+    assert r.status_code == status.HTTP_400_BAD_REQUEST

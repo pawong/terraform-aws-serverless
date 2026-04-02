@@ -5,4 +5,3 @@ pytest-cov==7.1.0
 mypy==1.20.0
 fastapi-cli==0.0.24
 requests==2.33.1
-httpx==0.28.1
